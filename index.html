@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+<div class="botao1" style="width: 100 px; height: 100 px; background-color: blue;">
+    <div id=“product-component-1585134129665”></div>
+    <script type=“text/javascript”>
+    /*<![CDATA[*/
+    (function () {
+      var scriptURL = ‘https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js’;
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
+        }
+      } else {
+        loadScript();
+      }
+      function loadScript() {
+        var script = document.createElement(‘script’);
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName(‘head’)[0] || document.getElementsByTagName(‘body’)[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+      }
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: ‘auroramaria.com.br’,
+          storefrontAccessToken: ‘fa3aae88aa0d20185ac2668ee188e2d6’,
+        });
+        ShopifyBuy.UI.onReady(client).then(function (ui) {
+          ui.createComponent(‘product’, {
+            id: ‘3782032818198’,
+            node: document.getElementById(‘product-component-1585134129665’),
+            moneyFormat: ‘R%24%20%7B%7Bamount_with_comma_separator%7D%7D’,
+            options: {
+      “product”: {
+        “styles”: {
+          “product”: {
+            “@media (min-width: 601px)“: {
+              “max-width”: “calc(25% - 20px)“,
+              “margin-left”: “20px”,
+              “margin-bottom”: “50px”
+            }
+          }
+        },
+        “buttonDestination”: “checkout”,
+        “text”: {
+          “button”: “Buy now”
+        }
+      },
+      “productSet”: {
+        “styles”: {
+          “products”: {
+            “@media (min-width: 601px)“: {
+              “margin-left”: “-20px”
+            }
+          }
+        }
+      },
+      “modalProduct”: {
+        “contents”: {
+          “img”: false,
+          “imgWithCarousel”: true,
+          “button”: false,
+          “buttonWithQuantity”: true
+        },
+        “styles”: {
+          “product”: {
+            “@media (min-width: 601px)“: {
+              “max-width”: “100%“,
+              “margin-left”: “0px”,
+              “margin-bottom”: “0px”
+            }
+          }
+        },
+        “text”: {
+          “button”: “Add to cart”
+        }
+      },
+      “cart”: {
+        “text”: {
+          “total”: “Subtotal”,
+          “button”: “Checkout”
+        }
+      }
+    },
+          });
+        });
+      }
+    })();
+    /*]]>*/
+    </script>
+
+    <div class="botao2" style="width: 100 px; height: 100 px; background-color: darkgray; float: right; display: none">
+        <div id='product-component-1585134929731'></div>
+        <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              ShopifyBuyInit();
+            } else {
+              loadScript();
+            }
+          } else {
+            loadScript();
+          }
+          function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+          }
+          function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+              domain: 'bra-test.myshopify.com',
+              storefrontAccessToken: '0a5ce3effe2c36073684121b4d27a61f',
+            });
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+              ui.createComponent('product', {
+                id: '3777522630678',
+                node: document.getElementById('product-component-1585134929731'),
+                moneyFormat: 'R%24%20%7B%7Bamount_with_comma_separator%7D%7D',
+                options: {
+          "product": {
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "calc(25% - 20px)",
+                  "margin-left": "20px",
+                  "margin-bottom": "50px"
+                }
+              }
+            },
+            "contents": {
+              "img": false,
+              "title": false,
+              "price": false
+            },
+            "text": {
+              "button": "Add to cart"
+            }
+          },
+          "productSet": {
+            "styles": {
+              "products": {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-20px"
+                }
+              }
+            }
+          },
+          "modalProduct": {
+            "contents": {
+              "img": false,
+              "imgWithCarousel": true
+            },
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px"
+                }
+              }
+            }
+          }
+        },
+              });
+            });
+          }
+        })();
+        /*]]>*/
+        </script>
+    
+    </div>
+
+</div>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
